@@ -1,0 +1,8 @@
+
+<h2 class="display-3 text-center fw-bold" [ngClass]="'text-light'">Top Coins</h2>
+<input class="mx-5 bg-dark text-light text-center" placeholder="Search" type="text" name="searchCoin" id="searchCoin" [(ngModel)]="criteri"/>
+<ul>
+  <div class="row row-cols-3 my-4 mx-4">
+    <app-coins-item [coin]="coin" *ngFor="let coin of coins | filterCoins:criteri"></app-coins-item>
+  </div>
+</ul>

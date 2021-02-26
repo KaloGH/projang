@@ -1,0 +1,34 @@
+<div class="container">
+
+  <div class="card text-center text-light bg-dark my-5">
+    <div class="card-header fw-bold display-5 text-info">
+      {{coinInfo.name}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-warning">Descripcion</h5>
+      <p class="card-text" *ngIf="coinInfo.description.es != ''; else noDescription">{{coinInfo.description.es}}</p>
+      <ng-template #noDescription>La moneda no contiene descripcion.</ng-template>
+      <p></p>
+      <h5 class="card-title fw-bold text-warning">Pais de Origen</h5>
+      <p class="card-text" *ngIf="coinInfo.country_origin != ''; else noCountry">{{coinInfo.country_origin}}</p>
+      <ng-template #noCountry>No está disponible.</ng-template>
+      <p></p>
+      <h5 class="card-title fw-bold text-warning">Precio Actual</h5>
+      <p class="card-text" *ngIf="coinInfo.market_data.current_price.eur != ''; else noPrice">{{coinInfo.market_data.current_price | priceEuroDollar}}</p>
+      <ng-template #noPrice>No está disponible.</ng-template>
+      <p></p>
+      <h5 class="card-title fw-bold text-warning">Categorias</h5>
+      <p class="card-text" *ngIf="coinInfo.categories.length != 0; else noCategoria">
+        <ng-container *ngFor="let cat of coinInfo.categories">-> {{cat | uppercase}}<br></ng-container>
+      </p>
+      <ng-template #noCategoria>No está disponible.</ng-template>
+
+      <p></p>
+
+    </div>
+    <div class="card-footer">
+      <a class="btn btn-outline-primary mx-5" href="{{coinInfo.links.homepage[0]}}"> Pagina Oficial </a>
+      <a  class="btn btn-outline-info mx-5" [routerLink]="['/coins']">Volver</a>
+    </div>
+  </div>
+</div>

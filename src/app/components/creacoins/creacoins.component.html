@@ -1,0 +1,20 @@
+<form class="form text-light" [formGroup]="formCoin" (ngSubmit)="create()">
+  <div class="mb-3">
+    <label for="formCoinName"  class="form-label">Nombre de la Moneda</label>
+    <input type="text" class="form-control" id="formCoinName" formControlName="coinName" >
+  </div>
+  <div class="mb-3">
+    <label for="formCoinPrice" class="form-label">Precio actual</label>
+    <input type="number" class="form-control" id="formCoinPrice" formControlName="coinPrice">
+  </div>
+  <div class="mb-3">
+    <label for="formCoinDescription" class="form-label">Descripcion de la Moneda</label>
+    <input type="text" class="form-control" id="formCoinDescription" formControlName="coinDescription" >
+  </div>
+  <div class="mb-3">
+    <label for="formCoinSymbol" class="form-label">Symbolo de la Moneda - Suele ser Abreviatura</label>
+    <input type="text" class="form-control" id="formCoinSymbol" formControlName="coinSymbol">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Crear</button>
+</form>

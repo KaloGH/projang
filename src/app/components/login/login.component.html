@@ -1,0 +1,21 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first bg-dark">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form class="bg-dark">
+      <input type="text" id="login" class="fadeIn second" value="{{user.login}}" name="login" placeholder="login" [(ngModel)]="user.login"
+      #inputLogin="ngModel" minlength="4" autocomplete="off" maxlength="10">
+      <p class="text-success" *ngIf="inputLogin.valid && inputLogin.value != ''">Login Valido</p>
+      <input type="password" id="password" autocomplete="off" class="fadeIn third"  name="loginPasswd" placeholder="password" [(ngModel)]="user.passwd" required minlength="1">
+      <span class="text-light">Remember me </span>
+      <input type="checkbox" id="remember" name="remember" value="remember-me" [(ngModel)]="recordar">
+      <input type="submit" class="fadeIn fourth" (click)="login($event)" value="Log In">
+    </form>
+  </div>
+</div>

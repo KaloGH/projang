@@ -1,27 +1,32 @@
-# ProjangKalo
+# Projecte Angular (ProjanG)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+Alumne : Kaloyan Emilov Kirov | Curs : 2ºDAW -- 2021
 
-## Development server
+## Criteris
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+(///////////////////////////////////////////////////////////////////////////////////)
+V - 1 - La web és un SPA
+V - 2 - ActivatedRoute
+V - 2 - *ngFor
+V - 2 - *ngIF
+V - 5 - @Input
+X - 5 - @Output
+V - 2 - ngStyle
+V - 2 - ngClass
+V - 1 - {{}}
+V - 1 - []
+V - 1 - ()
+V - 1 - [()]
+V - 2 - interficies
+V - 5 - Servicis //Creo que son todos Http pero es lo mismo si queremos usar el servicio normal.
+V - 10 - Servicis HTTP
+X - 5 - Cridar a una ruta per codi
+V - 2 - Pipes per defecte // uppercase
+V - 5 - Pipe personalitzat //Simple pero personalizada
+V - 2 - Formulari de plantilla //El login está fet aixi , si no equivoque els conceptes.
+R - 4 - Validació inputs // Tengo hecho algo en el login , con el usuario. No se si es lo que pides
+X - 5 - Validator personalitzat
+V - 20 - Formularis reactius
+V - 10 - Autenticació // He hecho lo mismo que en los videos , nada más que eso.
+X - 5 - Observable amb Subject
+(/////////////////////////////////////////////////////////////////////////////////)
