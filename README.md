@@ -30,3 +30,6 @@ V - 20 - Formularis reactius
 V - 10 - Autenticació // He hecho lo mismo que en los videos , nada más que eso.
 X - 5 - Observable amb Subject
 (/////////////////////////////////////////////////////////////////////////////////)
+
+## Informacion Extra
+  El login recuerda pero no funciona muy bien y tampoco esta implementada la contraseña , la validacion tampoco es muy buena.
