@@ -25,7 +25,7 @@ V - 2 - Pipes per defecte // uppercase
 V - 5 - Pipe personalitzat //Simple pero personalizada
 V - 2 - Formulari de plantilla //El login está fet aixi , si no equivoque els conceptes.
 R - 4 - Validació inputs // Tengo hecho algo en el login , con el usuario. No se si es lo que pides
-X - 5 - Validator personalitzat
+V - 5 - Validator personalitzat
 V - 20 - Formularis reactius
 V - 10 - Autenticació // He hecho lo mismo que en los videos , nada más que eso.
 X - 5 - Observable amb Subject

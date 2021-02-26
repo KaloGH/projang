@@ -5,7 +5,10 @@
   </div>
   <div class="mb-3">
     <label for="formCoinPrice" class="form-label">Precio actual</label>
-    <input type="number" class="form-control" id="formCoinPrice" formControlName="coinPrice">
+    <input type="number" class="form-control" id="formCoinPrice" formControlName="coinPrice"
+    [ngClass]="{'is-valid': priceValid.valid && priceValid.touched,
+    'is-invalid': priceValid?.invalid && priceValid?.touched}">
+    <p class="text-danger" *ngIf="priceValid?.invalid && priceValid?.touched">No puede valer más de 600€</p>
   </div>
   <div class="mb-3">
     <label for="formCoinDescription" class="form-label">Descripcion de la Moneda</label>
@@ -13,8 +16,17 @@
   </div>
   <div class="mb-3">
     <label for="formCoinSymbol" class="form-label">Symbolo de la Moneda - Suele ser Abreviatura</label>
-    <input type="text" class="form-control" id="formCoinSymbol" formControlName="coinSymbol">
+    <input type="text" class="form-control" id="formCoinSymbol" formControlName="coinSymbol" appMinPrice="1">
   </div>
 
   <button type="submit" class="btn btn-primary">Crear</button>
 </form>
+
+<hr>
+  <pre class="text-light">
+    formCoin: {{priceValid.valid}}
+    valid: {{formCoin.valid}}
+     form: {{formCoin.value | json}}
+  </pre>
+
+
